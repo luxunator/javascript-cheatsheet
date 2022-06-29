@@ -26,4 +26,13 @@ let myString = "string"; // String
 let myNum = 123; // Number
 
 let myBool = true; // Boolean
+
+let myObject = { // Object
+  property: "a property",
+  method: function (){
+    return "There is a method and " + this.property + " within this object.";
+  }
+};
+
+let myArray = ['a', 'b', 'c', 1, 2, 3]; // Array
 ```
