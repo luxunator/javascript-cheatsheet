@@ -106,7 +106,7 @@ console.log(typeof myBool); // boolean
 Boolean expressions are expressions that are evaluated and return either a value of true or false in order to show a relationship or to be used in conditionals
 
 Example:
-```
+```javascript
 console.log(5 === 5); // true
 console.log(10 === 5); // false
 
@@ -121,38 +121,56 @@ Example:
 // (Note: Loose equal and not equal comparisons have some automatic type conversion so in som cases comparison of different types can return true)
 
 // Loose Equal (loosely checks if values are equal to one another)
-console.log(20 == 20) // true
-console.log(20 == 33) // false
+console.log(20 == 20); // true
+console.log(20 == 33); // false
 
 // Loose Not Equal (loosely checks if values are not equal to one another)
-console.log(45 != 15) // true
-console.log(24 != 24) // false
+console.log(45 != 15); // true
+console.log(24 != 24); // false
 
 (Note: Strict equal and not equal comparisons will always honor original type when comparing)
 // Strict Equal (strictly checks if values are equal to one another)
-console.log("cat" === "cat") // true
-console.log("cat" === "dog") // false
+console.log("cat" === "cat"); // true
+console.log("cat" === "dog"); // false
 
 // Strict Not Equal (strictly checks if values are not equal to one another)
-console.log("turtle" !== "frog") // true
-console.log("turtle" !== "turtle")
+console.log("turtle" !== "frog"); // true
+console.log("turtle" !== "turtle");
 
 // (Note: Greater than and less than comparisons can still compare values that aren't number types)
 // Greater Than (checks if the first operand is greater than the second operand)
-console.log(35 > 15) // true
-console.log(11 > 12) // false
+console.log(35 > 15); // true
+console.log(11 > 12); // false
 
 // Less Than (checks if the first operand is less than the second operand)
-console.log(91 < 102) // true
-console.log(3 < 2) // false
+console.log(91 < 102); // true
+console.log(3 < 2); // false
 
 // Greater Than or Equal To (checks if the first operand is greater than or equal to the second operand)
-console.log(22 >= 21) // true
-console.log(22 >= 22) // true
-console.log(7 >= 19) // false
+console.log(22 >= 21); // true
+console.log(22 >= 22); // true
+console.log(7 >= 19); // false
 
 // Less Than or Equal To (checks if the first operand is less than or equal to the second operand)
-console.log(26 <= 94) // true
-console.log(26 <= 26) // true
-console.log(63 <= 57) // false
+console.log(26 <= 94); // true
+console.log(26 <= 26); // true
+console.log(63 <= 57); // false
 ```
+
+### logical operators
+logical operators allow for more complex boolean expressions that use operators that take multiple boolean expressions and evaluate them as a larger one
+ 
+ Example:
+ ```javascript
+ // Logical AND (&&)
+ console.log("apple" === "apple" && 40 > 30); // true
+ console.log(91 >= 203 && true); // false
+ 
+// Logical OR (||)
+console.log(72 < 98 || true === false); // true
+console.log(false !== false || "cat" === "dog"); // false
+
+// Logical NOT (!)
+console.log(!(85 < 37)); // true
+console.log(!("joe" === "joe")); // false
+ ```
