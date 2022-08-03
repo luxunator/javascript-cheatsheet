@@ -174,3 +174,18 @@ console.log(false !== false || "cat" === "dog"); // false
 console.log(!(85 < 37)); // true
 console.log(!("joe" === "joe")); // false
  ```
+### conditionals
+conditionals allow for certain blocks of code to be executed if a condition is met
+
+Example:
+```javascript
+let myName = "bob";
+
+if (myName === "bob) { // Code in curly brackets is executed if name is bob
+  console.log("You are the admin!");
+} else if (myName === "joe") { // Code in curly brackets is executed if name is joe
+  console.log("You are the janitor!");
+} else { // Code in curly brackets is if the name is something other than bob or joe
+  console.log("Hey! You shouldn't be here!");
+}
+```
