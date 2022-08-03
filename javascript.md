@@ -181,7 +181,7 @@ Example:
 ```javascript
 let myName = "bob";
 
-if (myName === "bob) { // Code in curly brackets is executed if name is bob
+if (myName === "bob") { // Code in curly brackets is executed if name is bob
   console.log("You are the admin!");
 } else if (myName === "joe") { // Code in curly brackets is executed if name is joe
   console.log("You are the janitor!");
